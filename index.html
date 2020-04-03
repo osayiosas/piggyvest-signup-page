@@ -44,25 +44,26 @@
                 <input type="text" placeholder="Referrer phone or Code">
               </div>
               <div class="form-item">
-                <label for="How Did You Hear About Us? (Optional)">How Did You Hear About Us? (Optional)</label>
-                <input list="advert" placeholder="Click To Select">
-                <datalist id="advert">
-                  <option value="Click To Select"></option>
-                  <option value="facebook"></option>
-                  <option value="twitter"></option>
-                  <option value="instagram"></option>
-                  <option value="friends/family/coworker referral"></option>
-                  <option value="google search"></option>
-                  <option value="google playstore"></option>
-                  <option value="online blog"></option>
-                  <option value="local newspaper"></option>
-                  <option value="at an event"></option>
-                  <option value="other"></option>
-                </datalist>
+                <label class="text-xs leading-loose mb-1 text-gray-700 font-bold font-display" for="">How Did You Hear About Us? (Optional)</label>
+                    
+                        <Select name="dropdown" >
+                            <optgroup>Click to Select
+                                <option class="option">Click to Select</option>
+                                <option class="option">Facebook</option>
+                                <option class="option">Twitter</option> 
+                                <option class="option">Instagram</option> 
+                                <option class="option">Friend/Family/Coworker Referral</option> 
+                                <option class="option">Google search</option> 
+                                <option class="option">Google playstore</option> 
+                                <option class="option">Online Blog</option> 
+                                <option class="option">Local Newspaper</option> 
+                                <option class="option">At an Event</option>
+                                <option class="option">Others</option>
+                            </optgroup>
+                        </Select>
               </div>
-              <div class="form-item">
-                  <input type="button" value="create account">
-              </div>
+              <button type="button" class="twitter-btn">create account</button>
+              
             </div>
           </div>
         </form>

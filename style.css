@@ -13,6 +13,7 @@ body{
     font-family: -apple-system, BlinkMacSystemFont,
      'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 
      'Open Sans', 'Helvetica Neue', sans-serif;
+     
    
 }
 .background{
@@ -55,12 +56,13 @@ h2+p{
     margin :2em 0;
     
 }
-.form-item p{
+.form-item label{
     font-size:0.75em;
     color: rgb(82, 81, 81);
     margin :.8em 0;
     text-transform: capitalize;
     font-weight: bolder;
+    font-size: 13px;
 }
 input{
     background: rgb(245, 245, 247);
@@ -69,22 +71,51 @@ input{
     border: none;
     border-radius: 5px 5px 5px 5px;
 }
-datalist{
-    overflow: hidden;
-}
 ::placeholder{
-    font-size: 1.2em;
-    color: rgb(182, 180, 180);
+    font-size: 1.0em;
+    color: rgb(137, 137, 145);
     text-transform: capitalize;
 }
-[type="button"]{
-    background: #062863;
-    border-radius: 10px 10px 10px 0;
+select{
+    padding: 1rem;
+    background-color: rgb(245, 245, 247);
+    border: none;
+    width: 100%;
+    border-radius: 5px 5px 5px 5px;
     margin-bottom: 2em;
+}
+.option{
+    padding: 16px;
+    line-height: 1.5;
+    color: rgb(26, 32, 44);
+    margin-left: 2px;
+    margin-right: 2px;
+    max-width: calc(100% - 8px);
+    position: absolute;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    top: 50%;
+    transform: translateY(-50%);
+    box-sizing: border-box;
+    overflow: hidden;
+}
+button {
     color: white;
-    font-size: .8em;
-    text-transform: uppercase;
+    background-color: blue;
+    width: 90%;
+    padding: 20px;
+    border-radius: 20px;
+    font-size: 15px;
+    margin: 10px 0;
+    margin-bottom: 1.0em;
+    border: none;
+    outline: none;
     cursor: pointer;
+    transition: ease-in-out;
+    text-transform: uppercase;
+} 
+button:hover {
+    background-color: #062863;
 }
 footer{
     height: 30vh;
